@@ -1,0 +1,117 @@
+body {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-image: url('pexels-photo-355915.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+}
+
+button {
+    height: 60px;
+    width: 64px;
+    color: rgb(16, 19, 34);
+    font-size: 17px;
+    border: rgb(206, 218, 255) solid 0px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+button:hover {
+    transition: 0.2s ease;
+    box-shadow: gray 0px 1px 10px;
+}
+
+.btn-container {
+    width: 370px;
+    height: 60px;
+    margin: auto;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button:focus {
+    outline: none;
+}
+
+#laps {
+    list-style-type: decimal;
+    font-size: 23px;
+    color: #e2dcdc;
+    margin-right: 44px;
+    font-weight: bold;
+    text-align: center;
+    background-color: e2dcdc;
+    list-style-position: inside;
+}
+
+#laps li {
+    margin-bottom: 5px;
+    background-color: #e6e3e3;
+    color: rgb(16, 19, 34);
+    border-radius: 2px;
+    padding: 6px;
+    width: 100%;
+}
+
+.title {
+    font-size: 48px;
+    color: #e6e3e3;
+    margin: 10px;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink-one {
+    opacity: 1;
+    animation: blinker-one 0.7s alternate infinite;
+}
+
+@keyframes blinker-one {
+    0% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .funcBtn {
+        letter-spacing: 5px !important;
+        width: 38% !important;
+        background-color: #333333 !important;
+        color: #ff8300 !important;
+        border: 1px solid #ff8300 !important;
+        display: block;
+    }
+    .funcBtn:focus {
+        outline: none;
+    }
+    .display-4 {
+        font-size: 30px !important;
+        width: 30% !important;
+    }
+    .blink-one {
+        width: 2% !important;
+    }
+}
